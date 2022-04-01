@@ -1,5 +1,3 @@
-
-
 // *************submit button hover color controls ************* //
 
 let submitHover = document.querySelector(".submit-button");
