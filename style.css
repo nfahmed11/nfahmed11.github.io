@@ -42,6 +42,12 @@ body {
   font-size: 3rem;
 }
 
+p {
+  font-size: 1rem;
+  padding: 10px 0;
+  letter-spacing: 2px;
+}
+
 /******************* navigation bar *******************/
 
 .navbar {
@@ -96,7 +102,7 @@ li {
 a {
   text-shadow: 3px 3px 3px #d06f7e;
   color: #65d9e5;
-  font-size: 0.9rem;
+  font-size: 1vw;
   float: left;
   display: block;
   text-align: center;
@@ -105,7 +111,7 @@ a {
   transition: all 0.2s ease-in-out;
   font-family: sans-serif;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 a:hover {
@@ -116,7 +122,7 @@ a:hover {
 .Portfolio-intro {
   position: relative;
   letter-spacing: 2px;
-  width: 40%;
+  width: 55%;
 }
 
 .wordColor {
@@ -124,14 +130,8 @@ a:hover {
   text-shadow: 3px 3px 3px #4a4860;
 }
 
-.h4 {
-  font-size: 1.2rem;
-}
-
-p {
-  font-size: 1rem;
-  padding: 10px 0;
-  letter-spacing: 2px;
+.introP {
+  font-size: 1.75vw;
 }
 
 #intro > p.typewriter.wordColor {
@@ -139,12 +139,12 @@ p {
 }
 
 .Portfolio-intro h1 {
-  font-size: 4em;
+  font-size: 6vw;
   text-shadow: 1px 1px 1px #65d9e5, 2px 2px 2px #4a4860;
 }
 
 .Portfolio-intro h2 {
-  font-size: 3rem;
+  font-size: 3vw;
 }
 
 .intro-background {
@@ -169,6 +169,7 @@ p {
 
 /* arrow */
 .intro-background > a {
+  font-size: 3vw;
   width: 100%;
   position: absolute;
   bottom: 90px;
@@ -183,13 +184,13 @@ p {
 
 @keyframes bounce-2 {
   0% {
-    transform: translateY(30px);
+    transform: translateY(10px);
   }
   50% {
     transform: translateY(40px);
   }
   100% {
-    transform: translateY(30px);
+    transform: translateY(10px);
   }
 }
 /* 
@@ -216,7 +217,7 @@ p {
 .about-background {
   background: linear-gradient(
     0deg,
-    rgba(165, 80, 103, 1) 0%,
+    rgba(184, 124, 141, 1) 0%,
     rgba(242, 207, 216, 1) 4%,
     rgba(242, 207, 216, 1) 100%
   );
@@ -247,13 +248,17 @@ p {
   opacity: 0.85;
 }
 
+.h4 {
+  font-size: 1.2rem;
+}
+
 /******************* portfolio skills toolbox *******************/
 .skills-background {
   background: linear-gradient(
     0deg,
-    rgba(184, 124, 141, 1) 0%,
-    rgba(165, 80, 103, 1) 4%,
-    rgba(165, 80, 103, 1) 100%
+    rgba(242, 207, 216, 1) 0%,
+    rgba(184, 124, 141, 1) 4%,
+    rgba(184, 124, 141, 1) 100%
   );
 }
 
@@ -293,8 +298,8 @@ p {
   background: linear-gradient(
     0deg,
     rgba(246, 143, 152, 1) 0%,
-    rgba(184, 124, 141, 1) 4%,
-    rgba(184, 124, 141, 1) 100%
+    rgba(242, 207, 216, 1) 4%,
+    rgba(242, 207, 216, 1) 100%
   );
 }
 
@@ -406,19 +411,20 @@ article > p {
 
 /* right arrow */
 .bounce-1 {
+  font-size: 2.5rem;
   animation-timing-function: ease;
   animation: 1s linear 1s infinite alternate bounce-1;
 }
 
 @keyframes bounce-1 {
   0% {
-    transform: translatex(-5px);
+    transform: translatex(-25px);
   }
   50% {
     transform: translateX(5px);
   }
   100% {
-    transform: translateX(-5px);
+    transform: translateX(-25px);
   }
 }
 
