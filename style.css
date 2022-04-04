@@ -262,6 +262,10 @@ a:hover {
   );
 }
 
+#skills {
+  max-height: 20%;
+}
+
 #skills > ul {
   display: flex;
   align-items: flex-start;
@@ -351,7 +355,7 @@ article > p {
     Arial, sans-serif;
   border: none;
   border-radius: 4px;
-  background-color: rgb(246, 143, 152);
+  background-color: #4a4860;
   color: white;
   text-transform: uppercase;
   font-weight: 500;
@@ -473,7 +477,7 @@ article > p {
 .contact-form .submit-button-wrapper input {
   border: none;
   border-radius: 4px;
-  background-color: rgb(246, 143, 152);
+  background-color: #4a4860;
   color: white;
   text-transform: uppercase;
   padding: 10px 60px;
