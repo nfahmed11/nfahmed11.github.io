@@ -1,354 +1,876 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-   
-    
-    <link rel="stylesheet" href="./style.css" />
 
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Filza Ahmed Portfolio</title>
+
+    
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
     <script
       src="https://kit.fontawesome.com/be65a01054.js"
       crossorigin="anonymous"
     ></script>
-    <title>Portfolio</title>
-  </head>
+    <!-- END FONTS-->
+
+    <link rel="stylesheet" href="style.css">
+    
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TXS3ZVH');</script>
+<!-- End Google Tag Manager -->
+
+    <!--Google Analytics-->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92090501-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!--END Google Analytics-->
 
 
-  <body>
-    <!-- just the nav bar -->
-    <div class="has-navbar-fixed-top">
-      <nav class="navbar is-fixed-top">
-        <ul class="left">
-          <li>
-            <a href="#intro"><img src="./assets/logo.png" alt="logo"></a>
-          </li>
-        </ul>
-        <ul class="right">
-          <li>
-            <a href="#intro"><i class="fa-solid fa-house"></i>Home</a>
-          </li>
-          <li>
-            <a href="#about"><i class="fa-solid fa-circle-info navIcon"></i>About</a>
-          </li>
-          <li>
-            <a href="#portfolio"><i class="fa-solid fa-folder navIcon"></i>Projects</a>
-          </li>          
-          <li>
-            <a href="#contact"><i class="fa-solid fa-envelope navIcon"></i>Contact</a>
-          </li>
-         
-        </ul>
-      </nav>
-    <div>
-  
+</head>
 
-   <!-- just the body stuff -->
-    <div class="intro-background">
-      <div id="intro" class="Portfolio-intro wrapper">
-        <div class="element"></div>
-        <p class=" typewriter wordColor introP fulljustify">Hi, my name is</p>
-        <h1>FILZA AHMED.<span class="type">&#160;</span></h1>
-        <h2>I create things<br>on the web.</h2>
-        <p class="wordColor introP fulljustify">(And sometimes off the web!)</p>
-      </div>
-      <a href="#about"><i class="fa-solid fa-angle-down bounce-2 wordColor"></i></a>
-    </div>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXS3ZVH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+ 
+ <header class="nk-header">
+        <!--
+        START: Navbar
+    -->
+        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top wordColor">
+            <div class="container">
+                <div class="nk-nav-table">
+                    <a href="index.html" class="nk-nav-logo">
+                        <img src="assets/images/logo.png" alt="logo-light" width="30" >
+                    </a>
 
+                    <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
+                        <li>
+                            <a href="index.html#about">About</a>
+                        </li>
+                        <li>
+                            <a href="index.html#projects">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="index.html#blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact">Contact</a>
+                        </li>
+                    </ul>
 
-    <div class="about-background">
-      <div id="about" class="Portfolio-about wrapper">
-        <h2 class="blueShadow heading">About Me</h2>
+                    <ul class="nk-nav nk-nav-right nk-nav-icons">
+                        <li class="single-icon hidden-lg-up">
+                            <a href="#" class="nk-navbar-full-toggle">
+                                <span class="nk-icon-burger">
+                                    <span class="nk-t-1"></span>
+                                    <span class="nk-t-2"></span>
+                                    <span class="nk-t-3"></span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Navbar -->
 
-        <div class="picAndTextContainer">
-
-
-
-          <div class="pic-container">
-            <img class="about-picture" src="./assets/headshotpink.png" alt="Filza headshot">
-            <div class="button"><i class="fa-regular fa-file-pdf navIcon"></i>Download Resume</div>
-          </div>
-           
-      
+    </header>
 
 
 
 
-          <div class="about-text">
-            
-            <p class="fulljustify">
-              Hello, World! Im excited to have caught your eye! While I have your attention, allow me to borrow a moment of your time. </p><br>
-
-              <p class="intro-para fulljustify">I am a multidisciplinary front-end <span class="wordColor">web</span> developer with an <span class="wordColor">art</span> and <span class="wordColor">design</span> background. In other words, I went to art school and came out a <span class="wordColor">programmer.</span></p>
-        <p class="h4">OOPS!</p>
-              <p class="fulljustify">My interest in web development started as a side hobby. I did a few personal projects, created things for small businesses, did a little bootcamping, and a few other courses. Now here I am... And here you are. 
-              </p><br>
-              <p class="fulljustify">Aside from coding, I like to spend my free time leveling up my other life skills. I enjoy weight lifting, creating music/art, and DIY projects here and there. I try to be a well rounded person - A jack of all trades if I may.  
-            </p>
-          </div>
+    <!--START: Navbar Mobile-->
+    <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
+        <div class="nk-navbar-bg">
+            <div class="bg-image" style="background-image: url('assets/images/background/background13.jpg')"></div>
         </div>
+        <div class="nk-nav-table">
+            <div class="nk-nav-row">
+                <div class="container">
+                    <div class="nk-nav-header">
+
+                        <div class="nk-nav-logo">
+                            <a href="index.html" class="nk-nav-logo">
+                                <img src="assets/images/logo.png" alt="logo-light" width="55">
+                            </a>
+                        </div>
+
+                        <div class="nk-nav-close nk-navbar-full-toggle">
+                            <span class="nk-icon-close"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-nav-row-full nk-nav-row">
+                <div class="nano">
+                    <div class="nano-content">
+                        <div class="nk-nav-table">
+                            <div class="nk-nav-row nk-nav-row-full nk-nav-row-center nk-navbar-mobile-content">
+                                <ul class="nk-nav">
+                                    <!-- Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"] -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-nav-row">
+                <div class="container">
+                    <div class="nk-nav-social">
+                        <ul>
+                            <li><a href="https://www.instagram.com/filz.ah/"><i class="fa-brands fa-instagram contact-icon"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/filza-ahmed-683b731a7/"><i class="fa-brands fa-linkedin-in contact-icon"></i></a></li>
+                            <li><a href="https://github.com/nfahmed11"><i class="fa-brands fa-github contact-icon"></i></a></li>
+                            <li ><a href="https://twitter.com/Filza_Ah"><i class="fa-brands fa-twitter contact-icon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Navbar Mobile -->
+
+
+    <div class="nk-main">
+
+        <!-- START: Header Title -->
+        <div class="nk-header-title nk-header-title-full">
+            <div class="bg-image">
+                <div style="background-image: url('assets/images/background/background_1.jpeg');"></div>
+                <div class="bg-image-overlay" style="background-color: rgb(219 160 182/ 41%) ;"></div>
+            </div>
+            <div class="nk-header-table">
+                <div class="nk-header-table-cell">
+                    <div class="container">
+
+                        <h2 class="nk-subtitle text-white wordColor">Front-End Web Developer</h2>
+
+
+                        <h1 class="nk-title display-3 wordColor">Hi, my name is
+                            <br>
+                            <em class="fw-400 ">Filza Ahmed.</em>
+                        </h1>
+
+                        <h2 class="nk-subtitle text-white wordColor">I create things on the web.</h2>
+                        <h2 class="nk-subtitle text-white wordColor">(And sometimes off the web!)</h2>
+
+                        <div class="nk-gap"></div>
+                        <div class="nk-header-text text-white">
+                            <div class="nk-gap-4"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <a class="nk-header-title-scroll-down  bounce-2 wordColor" href="#nk-header-title-scroll-down"><i class="fa-solid fa-angle-down intro-arrow"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div id="nk-header-title-scroll-down"></div>
+
+        <!-- END: Header Title -->
+        
+        <!-- START: About Me -->
+        <div class="bg-white" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 text-xs-center">
+                        <div class="nk-gap-4 mt-9"></div>
+
+                        <h2 class="display-4 wordColor">About Me</h2>
+                        <div class="nk-gap mnt-5"></div>
+
+                        <p> Hello, World! Im excited to have caught your eye! While I have your attention, allow me to borrow a moment of your time.
+                        </p>
+
+                        <p>I am a multidisciplinary front-end <span class="wordColor">web</span> developer with an <span class="wordColor">art</span> and <span class="wordColor">design</span> background. In other words, I went to art school and came out a <span class="wordColor">programmer.</span></p>
+
+                        <p>OOPS!</p>
+
+                        <p>My interest in <span class="wordColor">web development</span> started as a side hobby with a few personal projects, <span class="wordColor">creating</span> for small businesses. Then I did a little bootcamping, and a few other courses. Now here I am... And here you are.</p>
+
+
+                        <p>Aside from <span class="wordColor">coding</span>, I like to spend my free time leveling up my other life skills. I enjoy weight lifting, creating music/art, and DIY projects here and there. I try to be a well rounded person - A jack of all trades if I may. </p>
+
+<!-- 
+                        <img src="assets/images/headshotpink.png" alt="headshot" class="nk-img-fit"> -->
+
+                        <div class="nk-gap-4 mt-25"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: About Me -->
+
+        <!-- START: Features -->
+        <div class="nk-box bg-dark-1 text-white">
+            <div class="bg-image" style="background-image: url('assets/images/background/background18.jpg');"></div>
+            <div class="nk-gap-5 mnt-6"></div>
+            <div class="container">
+                <div class="row vertical-gap stats-container">
+                    
+                    <div class="col-md-6 col-lg-3 stats-width">
+                        <div class="nk-ibox-1">
+                            <div class="nk-ibox-icon">
+                                <span><i class="fa-solid fa-briefcase"></i></span>
+                            </div>
+                            <div class="nk-ibox-cont">
+                                <div class="nk-ibox-title">54</div>
+                                <div class="nk-ibox-text">Projects Completed</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 stats-width">
+                        <div class="nk-ibox-1">
+                            <div class="nk-ibox-icon">
+                                <span><i class="fa-solid fa-clock"></i></span>
+                            </div>
+                            <div class="nk-ibox-cont">
+                                <div class="nk-ibox-title">5465</div>
+                                <div class="nk-ibox-text">Working Hours</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 stats-width">
+                        <div class="nk-ibox-1">
+                            <div class="nk-ibox-icon">
+                                <span><i class="fa-solid fa-graduation-cap"></i></span>
+                            </div>
+                            <div class="nk-ibox-cont">
+                                <div class="nk-ibox-title">28</div>
+                                <div class="nk-ibox-text">Courses Completed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- extra to add onwul   -->
+                    <!-- <div class="col-md-6 col-lg-3 stats-width">
+                        <div class="nk-ibox-1">
+                            <div class="nk-ibox-icon">
+                                <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-heart"></i></span>
+                            </div>
+                            <div class="nk-ibox-cont">
+                                <div class="nk-ibox-title">15</div>
+                                <div class="nk-ibox-text">Happy Clients/positive feedback</div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="nk-gap-5 mnt-6"></div>
+        </div>
+        <!-- END: Features -->
+
+        <!-- START: Portfolio -->
+        <div class="nk-box bg-white" id="projects">
+            <div class="nk-gap-4 mt-5"></div>
+
+            <h2 class="text-xs-center display-4 wordColor">Best Projects</h2>
+
+            <div class="nk-gap mnt-6"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="text-xs-center">A display of some of my work including work with clients and some personal projects.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nk-gap-2 mt-12"></div>
+            <div class="container">
+            <div class="nk-portfolio-list nk-isotope nk-isotope-3-cols">
+
+
+                <div class="nk-isotope-item" data-filter="Mockup">
+                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                        
+                        <div class="nk-portfolio-item-image">
+                            <div style="background-image: url('assets/images/masala.png');"></div>
+                        </div>
+                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                            <div>
+                                <h2 class="portfolio-item-title h3">Masala India</h2>
+                                <div class="portfolio-item-category">HTML5 - CSS3 - JQuery - API</div>
+                            </div>
+                            <div class="portfolio-buttons">
+                               
+
+                                <a href="https://nfahmed11.github.io/MasalaIndia/" class="nk-portfolio-item-link portfolio-button">VIEW LIVE</a>
+
+                                <a href="https://github.com/nfahmed11/MasalaIndia" class="nk-portfolio-item-link portfolio-button">GITHUB</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-isotope-item" data-filter="Mockup">
+                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                        
+                        <div class="nk-portfolio-item-image">
+                            <div style="background-image: url('assets/images/midland.png');"></div>
+                        </div>
+                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                            <div>
+                                <h2 class="portfolio-item-title h3">Midland Landing Page</h2>
+                                <div class="portfolio-item-category">HTML - CSS - Javascript</div>
+                            </div>
+                            <div class="portfolio-buttons">
+                               
+
+                                <a href="https://nfahmed11.github.io/Midland-Landing-Page/" class="nk-portfolio-item-link portfolio-button">VIEW LIVE</a>
+
+                                <a href="https://github.com/nfahmed11/Midland-Landing-Page" class="nk-portfolio-item-link portfolio-button">GITHUB</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-isotope-item" data-filter="Mockup">
+                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                        
+                        <div class="nk-portfolio-item-image">
+                            <div style="background-image: url('assets/images/material.png');"></div>
+                        </div>
+                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                            <div>
+                                <h2 class="portfolio-item-title h3">Materialistic Things</h2>
+                                <div class="portfolio-item-category">HTML5 - CSS3 - SASS</div>
+                            </div>
+                            <div class="portfolio-buttons">
+                               
+
+                                <a href="https://nfahmed11.github.io/Materialistic-Things/" class="nk-portfolio-item-link portfolio-button">VIEW LIVE</a>
+
+                                <a href="https://github.com/nfahmed11/Materialistic-Things" class="nk-portfolio-item-link portfolio-button">GITHUB</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-isotope-item" data-filter="Mockup">
+                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                        
+                        <div class="nk-portfolio-item-image">
+                            <div style="background-image: url('assets/images/scorekeeper.png');"></div>
+                        </div>
+                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                            <div>
+                                <h2 class="portfolio-item-title h3">Score Keeper</h2>
+                                <div class="portfolio-item-category">HTML - CSS - Javascript</div>
+                            </div>
+                            <div class="portfolio-buttons">
+                               
+
+                                <a href="https://nfahmed11.github.io/Score-Keeper/" class="nk-portfolio-item-link portfolio-button">VIEW LIVE</a>
+
+                                <a href="https://github.com/nfahmed11/Score-Keeper" class="nk-portfolio-item-link portfolio-button">GITHUB</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-isotope-item" data-filter="Mockup">
+                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                        
+                        <div class="nk-portfolio-item-image">
+                            <div style="background-image: url('assets/images/hangman.png');"></div>
+                        </div>
+                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                            <div>
+                                <h2 class="portfolio-item-title h3">Hangman</h2>
+                                <div class="portfolio-item-category">HTML - CSS - Javascript - REACT</div>
+                            </div>
+                            <div class="portfolio-buttons">
+                               
+
+                                <a href="https://nfahmed11.github.io/Hangman/" class="nk-portfolio-item-link portfolio-button">VIEW LIVE</a>
+
+                                <a href="https://github.com/nfahmed11/Hangman" class="nk-portfolio-item-link portfolio-button">GITHUB</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-isotope-item" data-filter="Mockup">
+                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                        
+                        <div class="nk-portfolio-item-image">
+                            <div style="background-image: url('assets/images/pokedex.png');"></div>
+                        </div>
+                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                            <div>
+                                <h2 class="portfolio-item-title h3">Pokedex</h2>
+                                <div class="portfolio-item-category">HTML5 - CSS3 - JQuery - API</div>
+                            </div>
+                            <div class="portfolio-buttons">
+                               
+
+                                <a href="https://nfahmed11.github.io/pokedex/" class="nk-portfolio-item-link portfolio-button">VIEW LIVE</a>
+
+                                <a href="https://github.com/nfahmed11/pokedex" class="nk-portfolio-item-link portfolio-button">GITHUB</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-isotope-item" data-filter="Mockup">
+                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                        
+                        <div class="nk-portfolio-item-image">
+                            <div style="background-image: url('assets/images/lightsout.png');"></div>
+                        </div>
+                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                            <div>
+                                <h2 class="portfolio-item-title h3">Lights Out</h2>
+                                <div class="portfolio-item-category">HTML - CSS - Javascript - REACT</div>
+                            </div>
+                            <div class="portfolio-buttons">
+                               
+
+                                <a href="https://nfahmed11.github.io/lights-out/" class="nk-portfolio-item-link portfolio-button">VIEW LIVE</a>
+
+                                <a href="https://github.com/nfahmed11/lights-out" class="nk-portfolio-item-link portfolio-button">GITHUB</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-isotope-item" data-filter="Mockup">
+                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                        
+                        <div class="nk-portfolio-item-image">
+                            <div style="background-image: url('assets/images/drumkit.png');"></div>
+                        </div>
+                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                            <div>
+                                <h2 class="portfolio-item-title h3">Drumkit</h2>
+                                <div class="portfolio-item-category">HTML - CSS - Javascript</div>
+                            </div>
+                            <div class="portfolio-buttons">
+                               
+
+                                <a href="https://nfahmed11.github.io/Drumkit/" class="nk-portfolio-item-link portfolio-button">VIEW LIVE</a>
+
+                                <a href="https://github.com/nfahmed11/Drumkit" class="nk-portfolio-item-link portfolio-button">GITHUB</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="nk-gap-4 mt-5"></div>
+        </div>
+        <!-- END: Portfolio -->
+    </div style="display: flex; justify-content: center;">
+  
+        <!-- START: Reviews can be added here if needed -->
+        <!-- END: Reviews -->
+
+        <!-- START: Partners can be added here-->
+        <!-- END: Partners-->
         
 
-      </div>
-    </div>
+        <!-- START: Toolkit -->
+        <div class="nk-box bg-white" id="skills-bg">
+            <div class="bg-image" style="background-image: url('assets/images/background/pink-background.jpg');"></div>
+            <div class="nk-gap-4 mt-5"></div>
 
-
-
-
-    <div class="skills-background">
-      <div id="skills" class="Portfolio-skills wrapper">
-        <h2 class="blueShadow heading">My Toolbox</h2>
-
-        <ul>
-          <li class="pinkShadow"><i class="fa-brands fa-html5 skill-icon "></i><br />HTML5</li>
-
-          <li class="pinkShadow"><i class="fa-brands fa-css3-alt skill-icon"></i><br />CSS</li>
-
-          <li class="pinkShadow"><i class="fa-brands fa-js-square skill-icon"></i><br />Javascript</li>
-
-          <li class="pinkShadow"><i class="fa-brands fa-bootstrap skill-icon"></i><br />Bootstrap</li>
-
-          <li class="pinkShadow"><i class="fa-brands fa-react skill-icon"></i><br />React</li> 
-          
-          <li class="pinkShadow"><img class="cc skill-icon" src="assets/icons8-jquery-50.png"/><br />Jquery</li>
-
-          <!-- <li class="pinkShadow"><i class="fa-brands fa-github skill-icon"></i><br />GitHub</li> -->
-
-          <li class="pinkShadow"><i class="fa-solid fa-terminal skill-icon"></i><br />Terminal</li>
-
-          <li class="pinkShadow"><i class="fa-solid fa-universal-access skill-icon"></i><br/>Accesibilty</li>
-
-          <li class="pinkShadow"><i class=" fa-brands fa-git-alt skill-icon"></i><br />git</li>
-
-          <li class="pinkShadow"><img class="cc skill-icon" src="assets/icons8-rest-api-64.png"/><br/>RESTful APIs</li>
-          <!-- 
-          <li class="pinkShadow"> <i class="devicon-vscode-plain skill-icon skill-icon"></i><br />Visual Studio Code</li> -->
-          
-          <li class="pinkShadow"><img class="cc skill-icon" src="assets/icons8-responsive-32.png"/><br />Responsive Design</li>
-
-          <li class="pinkShadow" ><img class="cc skill-icon" src="./assets/adobe.png" alt=""></i><br />Creative Cloud</li>
-
-        </ul>
-      </div>
-    </div>
-
-
-  
-    <div class="portfolio-background">
-      <div id="portfolio" class="Portfolio-portfolio wrapper">
-        <h2 class="blueShadow heading">Projects I've Built</h2>
-        <div class="projects">
-          
-          <!-- Posts -->
-							<section class="posts">
-								
-                <article>
-									<header>
-										<h2 class="blueShadow">Masala India </h2>
-                      <span class="date">HTML5 - CSS3 - JQuery - API </span>
-									</header>
-                  <div class="project-img">
-  									<img class="image" src="assets/masala.png" alt="matieralistic things page screenshot" />
+            <div class="container ">
+            <div id="skills" class="Portfolio-skills wrapper">
+                <h2 class="text-xs-center display-4 wordColor">My Toolkit</h2>
+        
+      
+              <ul>
+                  <div>
+                    <li  ><i class="fa-brands fa-html5 skill-icon "></i><br>HTML5</li>
                   </div>
-                  <p>A fully responsive multi-page design for an Indian/Pakistani restaurant.</p>
-									<ul class="actions special">
-										<li><a href="https://nfahmed11.github.io/MasalaIndia/" class="button">View Live</a></li>
-                    <li><a href="https://github.com/nfahmed11/MasalaIndia" class="button">GitHub</a></li>
-									</ul>
-								</article>
 
-                <article>
-									<header>
-										<h2 class="blueShadow">Midland Landing Page</h2>
-                      <span class="date">HTML - CSS - Javascript</span>
-									</header>
-                  <div class="project-img"><img class="image"
-                  src="assets/midland.png" alt="" /></div>
-									<p>A fully responsive landing page for a marketing agency.</p>
-									<ul class="actions special">
-										<li><a href="https://nfahmed11.github.io/Midland-Landing-Page/" class="button">View Live</a></li>
-                    <li><a href="https://github.com/nfahmed11/Midland-Landing-Page" class="button">GitHub</a></li>
-									</ul>
-								</article>
+                  <div>
+                    <li  ><i class="fa-brands fa-css3-alt skill-icon"></i><br />CSS</li>
+                  </div>
 
-                <article>
-									<header>
-										<h2 class="blueShadow">Materialistic Things</h2>
-                      <span class="date">HTML5 - CSS3 - SASS </span>
-									</header>
-                  <div class="project-img">
-									<img class="image" src="assets/matierial thing.png" alt="matieralistic things page screenshot" />
+
+                  <div>
+                    <li  ><i class="fa-brands fa-js-square skill-icon"></i><br />Javascript</li>
                 </div>
-                  <p>A fully responsive multi-page design for a textiles website.</p>
-									<ul class="actions special">
-										<li><a href="https://nfahmed11.github.io/Materialistic-Things/" class="button">View Live</a></li>
-                    <li><a href="https://github.com/nfahmed11/Materialistic-Things" class="button">GitHub</a></li>
-									</ul>
-								</article>
-
-                <article>
-									<header>
-										<h2 class="blueShadow">Score Keeper</h2>
-                      <span class="date">HTML - CSS - Javascript</span>
-									</header>
-                  <div class="project-img"><img class="image"
-                  src="assets/Screen Shot 2022-03-14 at 3.05.43 PM.png" alt="" /></div>
-									<p>A customizable score keeper with winning score, number of teams and team names.</p>
-									<ul class="actions special">
-										<li><a href="https://nfahmed11.github.io/Score-Keeper/" class="button">View Live</a></li>
-                    <li><a href="#" class="button">GitHub</a></li>
-									</ul>
-								</article>
-
-								<article>
-									<header>
-										<h2 class="blueShadow">Hangman</h2>
-                      <span class="date">HTML - CSS - Javascript - REACT</span>
-									</header>
-                  <div class="project-img"><img class="image" src="assets/Screen Shot 2022-03-14 at 3.04.11 PM.png" alt="" /></div>
-									<p>A game app in which you must guess the correct word before you run out of tries.</p>
-									<ul class="actions special">
-										<li><a href="https://nfahmed11.github.io/Hangman/" class="button">View Live</a></li>
-                    <li><a href="#" class="button">GitHub</a></li>
-									</ul>
-								</article>
 
 
-								<article>
-									<header>
-										<h2 class="blueShadow">Pokedex</h2>
-                      <span class="date">HTML - CSS - Javascript - REACT</span>
-									</header>
-									                  <div class="project-img"><img class="image" src="assets/Screen Shot 2022-03-14 at 3.05.00 PM.png" alt="" /></div>
-									<p>A game app in which you have to try and attain four pokemon with a total experience that is more than your opponent.</p>
-									<ul class="actions special">
-										<li><a href="https://nfahmed11.github.io/pokedex/" class="button">View Live</a></li>
-                    <li><a href="#" class="button">GitHub</a></li>
-									</ul>
-								</article>
-								
-                <article>
-									<header>
-										<h2 class="blueShadow">Lights Out</h2>
-                      <span class="date">HTML - CSS - Javascript - REACT</span>
-									</header>
-                  <div class="project-img"><img class="image" src="assets/Screen Shot 2022-03-14 at 3.04.35 PM.png" alt="" /></div>
-									<p>A game app in which you need to turn all of the lights off.</p>
-									<ul class="actions special">
-										<li><a href="https://nfahmed11.github.io/lights-out/" class="button">View Live</a></li>
-                    <li><a href="https://github.com/nfahmed11/lights-out" class="button">GitHub</a></li>
-									</ul>
-								</article>
+                <div>
+                    <li  ><i class="fa-brands fa-react skill-icon"></i><br />React</li> 
+                </div>
 
 
-                <article>
-                  <header>
-                    <h2 class="blueShadow">Drumkit</h2>
-                      <span class="date">HTML - CSS - Javascript</span>
-                  </header>
-                                    <div class="project-img"><img class="image" src="assets/Screen Shot 2022-03-14 at 3.30.33 PM.png" alt="" /></div>
-                  <p>An app that allows you to become the drummer you always wanted to be.</p>
-                  <ul class="actions special">
-                    <li><a href="https://nfahmed11.github.io/Drumkit/" class="button">View Live</a></li>
-                    <li><a href="https://github.com/nfahmed11/Drumkit" class="button">GitHub</a></li>
-                  </ul>
-                </article>
-							</section>
-
-         </div>
-      </div>
-    </div>
+                <div>
+                    <li  ><i class="fa-brands fa-bootstrap skill-icon"></i><br />Bootstrap</li>
+                </div>
 
 
+                <div>
+                    <li  ><img class="cc skill-icon" src="assets/images/icons8-jquery-50.png"/><br />Jquery</li>
+                </div>
 
 
+                <div>
+                    <li  ><i class="fa-solid fa-terminal skill-icon"></i><br />Terminal</li>
+                </div>
+
+                <div>
+                    <li  ><i class="fa-brands fa-node-js skill-icon"></i><br />Node.Js</li>
+                </div>
+
+                <div>
+                    <li  ><i class="fa-brands fa-wordpress-simple skill-icon"></i><br />Wordpress</li>
+                </div>
 
 
-      <div class="contact-background">
-        <div id="contact" class="Portfolio-contact wrapper">
-          <h2 class="blueShadow heading">Let's Connect! 💌
-          </h2>
+                <div>
+                    <li  ><i class="fa-solid fa-universal-access skill-icon"></i><br/>Accesibilty</li>
+                </div>
+      
+                <div>
+                    <li  ><i class=" fa-brands fa-git-alt skill-icon"></i><br />Git</li>
+                </div>
 
-          <div class="formandtext">
+                <div>
+                    <li  ><img class="cc skill-icon" src="assets/images/icons8-rest-api-64.png"/><br/>RESTful APIs</li>
+                </div>
 
-            <div class="contact-text-container">
-              <div class="contact-text">
-                <p class="fulljustify">Feel free to find me on social media and <span class="wordColor">say hey!</span> </p> 
-                <ul class="contact-icons contact-padding">
-                  <li ><a href="https://twitter.com/Filza_Ah"><i class="fa-brands fa-twitter contact-icon"></i></a></li>
-                  <li><a href="https://www.instagram.com/filz.ah/"><i class="fa-brands fa-instagram contact-icon"></i></a></li>
-                  <li><a href="https://www.linkedin.com/in/filza-ahmed-683b731a7/"><i class="fa-brands fa-linkedin-in contact-icon"></i></a></li>
-                  <li><a href="https://github.com/nfahmed11"><i class="fa-brands fa-github contact-icon"></i></a></li>
-                </ul>
-                <p class="fulljustify"> Or if you have a question and want to grab a (virtual) coffee/bubble tea, you can
-                  <span class="wordColor">get in touch</span> here!
-                </p>
-                <p class="letsTalk contact-padding">Let's <span class="wordColor">speak,</span> let's <span class="wordColor">chit,</span> <br>let's <span class="wordColor">chat,</span> let's <span class="wordColor">talk!</span></p>
-                <p><i class="fa-solid fa-angle-right wordColor bounce-1"></i></p>
-              </div>  
-            </div>
-          
+                <div>
+                    <li  ><img class="cc skill-icon" src="assets/images/icons8-responsive-32.png"/><br />Responsive Design</li>
+                </div>
+
+                <div>
+                    <li  ><i class=" fa-brands fa-figma skill-icon"></i><br />Figma</li>
+                </div>
+
+                <div>
+                    <li   ><img class="cc skill-icon" src="./assets/images/adobe.png" alt=""></i><br />Adobe Creative Cloud</li>
+                </div>
 
             
-              <div class=" d-flex">
-                <form action="https://formsubmit.co/nfahmed11@gmail.com" class="contact-form" method="POST">                
-                  <div>
-                      <input type="text" class="form-control pinkShadow rounded border-white mb-3 form-input" id="name"  name="Name" placeholder="Name" required>
-                  </div>
-                  <div>
-                      <input type="email" class="form-control pinkShadow rounded border-white mb-3 form-input" name="email" placeholder="Email Address" required>
-                  </div>
-                  <div>
-                      <textarea id="message" class="form-control pinkShadow rounded border-white mb-3 form-text-area" rows="5" cols="30" name="message" placeholder="Write your message here 📝" required></textarea>
-                  </div>
-                  <div class="submit-button-wrapper ">
-                      <input class="submit-button"
-            type="submit" value="Send">
-                  </div>
-                </form>
+            
+      
+              </ul>
+              <div class="nk-gap-4 mt-5"></div>
+            </div>
             </div>
           </div>
-        </div>
-      </div>
+        <!-- END: Toolkit -->
+        <div class="nk-box bg-gray-1" id="blog">
+            <div class="nk-gap-4 mt-5"></div>
+          
+            <h2 class="text-xs-center display-4">Latest Blogs</h2>
+          
+            <div class="nk-gap mnt-6"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                  <div class="text-xs-center">
+                    Coming soon - My journey as a self taught developer.
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="nk-gap-2 mt-12"></div>
+            <div class="container">
+              <!-- START: Carousel -->
+              <div
+                class="nk-carousel-2 nk-carousel-x2 nk-carousel-no-margin nk-carousel-all-visible nk-blog-isotope"
+                data-dots="true"
+              >
+                <div class="nk-carousel-inner">
+                  <div>
+                    <div>
+                      <div class="pl-15 pr-15">
+                        <div class="nk-blog-post">
+                          <div class="nk-post-thumb">
+                            <a href="blog-single.html">
+                              <img
+                                src="assets/images/background/background11.jpg"
+                                alt="image-ocean"
+                                class="nk-img-stretch"
+                              />
+                            </a>
+                            <div class="nk-post-category"><a href="#">Nature</a></div>
+                          </div>
+                          <h2 class="nk-post-title h4">
+                            <a href="blog-single.html">The Journey</a>
+                          </h2>
+          
+                          <div class="nk-post-date">September 18, 2016</div>
+          
+                          <div class="nk-post-text">
+                            <p>
+                              How I decided to become a self taught developer and what my journey looked like. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nk-gap-1"></div>
+                    </div>
+                  </div>
+          
+                  <div>
+                    <div>
+                      <div class="pl-15 pr-15">
+                        <div class="nk-blog-post">
+                          <div class="nk-post-thumb">
+                            <a href="blog-single.html">
+                              <img
+                                src="assets/images/background/background19.jpg"
+                                alt="image-mountains"
+                                class="nk-img-stretch"
+                              />
+                            </a>
+                            <div class="nk-post-category"><a href="#">Nature</a></div>
+                          </div>
+                          <h2 class="nk-post-title h4">
+                            <a href="blog-single.html">The First Interview</a>
+                          </h2>
+          
+                          <div class="nk-post-date">August 27, 2016</div>
+          
+                          <div class="nk-post-text">
+                            <p>
+                              What my first interview looked like. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nk-gap-1"></div>
+                    </div>
+                  </div>
+          
+                  <div>
+                    <div>
+                      <div class="pl-15 pr-15">
+                        <div class="nk-blog-post">
+                          <div class="nk-post-thumb">
+                            <a href="blog-single.html">
+                              <img
+                                src="assets/images/background/background15.jpg"
+                                alt="image-waterside"
+                                class="nk-img-stretch"
+                              />
+                            </a>
+                            <div class="nk-post-category"><a href="#">nature</a></div>
+                          </div>
+                          <h2 class="nk-post-title h4">
+                            <a href="blog-single.html">Accepting a Position only to be Scammed</a>
+                          </h2>
+          
+                          <div class="nk-post-date">August 14, 2016</div>
+          
+                          <div class="nk-post-text">
+                            <p>
+                              When you think you got your foot in the door but really just wasted a month or more of your life. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nk-gap-1"></div>
+                    </div>
+                  </div>
+          
+                  <div>
+                    <div>
+                      <div class="pl-15 pr-15">
+                        <div class="nk-blog-post">
+                          <div class="nk-post-thumb">
+                            <a href="blog-single.html">
+                              <img
+                                src="assets/images/background/background19.jpg"
+                                alt="image-mountains-in-the-clouds"
+                                class="nk-img-stretch"
+                              />
+                            </a>
+                            <div class="nk-post-category"><a href="#">Design</a></div>
+                          </div>
+                          <h2 class="nk-post-title h4">
+                            <a href="blog-single.html">College, Bootcamp, or selfteach?</a>
+                          </h2>
+          
+                          <div class="nk-post-date">August 14, 2016</div>
+          
+                          <div class="nk-post-text">
+                            <p>
+                              What is the best route for you?
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nk-gap-1"></div>
+                    </div>
+                  </div>
+          
+                  <div>
+                    <div>
+                      <div class="pl-15 pr-15">
+                        <div class="nk-blog-post">
+                          <div class="nk-post-thumb">
+                            <a href="blog-single.html">
+                              <img
+                                src="assets/images/background/background14.jpg"
+                                alt="image-coast"
+                                class="nk-img-stretch"
+                              />
+                            </a>
+                            <div class="nk-post-category"><a href="#">Design</a></div>
+                          </div>
+                          <h2 class="nk-post-title h4">
+                            <a href="blog-single.html">Why you should Always First</a>
+                          </h2>
+          
+                          <div class="nk-post-date">August 14, 2016</div>
+          
+                          <div class="nk-post-text">
+                            <p>
+                              Lights give have herb. First. Seed lesser his a fruit. Stars
+                              good divide fish appear don't, third deep.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nk-gap-1"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END: Carousel -->
+            </div>
+          
+            <div class="nk-gap-5 mt-20"></div>
+            <div style="display: flex; justify-content: center"></div>
+          </div>
+          
+        <!-- START: Blog -->
+
+        <!-- END: Blog -->
+
+        <!-- START: Contact Info -->
+        <div class="container" id="contact">
+            <div class="nk-gap-5"></div>
+            <div class="row vertical-gap">
+                <div class="col-lg-5">
+                    <!-- START: Info -->
+                    <!-- <h2 class="display-4 text-xs-center"><span class="wordColor">💌</span></h2> -->
+                    <h2 class="display-4 text-xs-center"><span class="wordColor">Let's<span><br><span class="wordColor" id="changingword">Connect</span></h2>
+                    
+                
+                    <div class="contact-text">
+                        <p class="text-xs-center">Feel free to find me on social media and <span class="wordColor">say hey!</span> </p>
+                        <div class="nk-nav-row">
+                            <div class="container">
+                                <div class="nk-contact-social">
+                                    <ul>
+                                        <li><a href="https://www.instagram.com/filz.ah/"><i class="fa-brands fa-instagram contact-icon"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/filza-ahmed-683b731a7/"><i class="fa-brands fa-linkedin-in contact-icon"></i></a></li>
+                                        <li><a href="https://github.com/nfahmed11"><i class="fa-brands fa-github contact-icon"></i></a></li>
+                                        <li ><a href="https://twitter.com/Filza_Ah"><i class="fa-brands fa-twitter contact-icon"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="text-xs-center">Or if you have a question and want to grab a (virtual) coffee/bubble tea, you can<span class="wordColor"> get in touch</span> here!</p>
+                        <!-- <p class="text-xs-center">Let's <span class="wordColor">speak,</span> let's <span class="wordColor">chit,</span> <br>let's <span class="wordColor">chat,</span> let's <span class="wordColor">talk!</span></p> -->
     
+                        <p class="text-xs-center"><i class="fa-solid fa-angle-right wordColor bounce-1 contact-arrow-right"></i></p>
+                        <p class="text-xs-center"><i class="fa-solid fa-angle-down bounce-2 wordColor contact-arrow-down"></i></p>
+                    </div>
+                    
+                
+                    <!-- END: Info -->
+                </div>
+                <div class="col-lg-7">
+                    <!-- START: Form -->
+                    <form action="https://formsubmit.co/nfahmed11@gmail.com" class="nk-form nk-form-ajax contact-form" method="POST">
+                        <div class="row vertical-gap">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control required" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control required" name="email" placeholder="Your Email">
+                            </div>
+                        </div>
+
+                        <div class="nk-gap-1"></div>
+                        <input type="text" class="form-control required" name="title" placeholder="Your Title">
+
+                        <div class="nk-gap-1"></div>
+                        <textarea class="form-control required" name="message" rows="8" placeholder="Your Comment" aria-required="true"></textarea>
+                        <div class="nk-gap-1"></div>
+                        <div class="nk-form-response-success"></div>
+                        <div class="nk-form-response-error"></div>
+                        <button class="nk-btn ">Send Message</button>
+                    </form>
+                    <!-- END: Form -->
+                </div>
+            </div>
+            <div class="nk-gap-5"></div>
+        </div>
+        <!-- END: Contact Info -->
 
 
 
 
+        <!--
+    START: Footer
+-->
+        <footer class="nk-footer">
+            <div class="nk-footer-cont">
+                <div class="container text-xs-center">
+                    <div class="nk-footer-social">
+                        <ul>
+                            <li><a href="https://www.instagram.com/filz.ah/"><i class="fa-brands fa-instagram contact-icon"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/filza-ahmed-683b731a7/"><i class="fa-brands fa-linkedin-in contact-icon"></i></a></li>
+                            <li><a href="https://github.com/nfahmed11"><i class="fa-brands fa-github contact-icon"></i></a></li>
+                            <li ><a href="https://twitter.com/Filza_Ah"><i class="fa-brands fa-twitter contact-icon"></i></a></li>
+                        </ul>
+                    </div>
 
+                    <div class="nk-footer-text">
+                        <p>Developed and Designed with Love <i class="fas fa-heart"></i> by Filza Ahmed</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END: Footer -->
+	</div>
+    <!-- START: Scripts -->
+    <script src="script.js"></script>
+    
+    <!-- END: Scripts -->
 
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-  <!-- just the footer outside of inner body -->
-  <div class="Portfolio-footer navbar blueShadow">
-    <p>Developed and designed with love <i class="fas fa-heart"></i> by Filza Ahmed</p>
-     <!-- UNSSTICK THIS- KEEP GLUES TO TOP THEN DISAPPEAR AND REAPPAER AT BOTTOM OF WEBPAGE-> -->
-  </div>
-
-  <script src="script.js "></script>
 </body>
-
 
 </html>
