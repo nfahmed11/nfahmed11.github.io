@@ -49,6 +49,10 @@ a:hover {
   outline-width: 0;
 }
 
+a:visited{
+  color: none;
+}
+
 b,
 strong {
   font-weight: inherit;

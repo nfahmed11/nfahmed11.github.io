@@ -1,0 +1,608 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Blog | The First Interview</title>
+
+    <meta
+      name="description"
+      content="Snow - Clean & Minimal Portfolio HTML template."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, clean, minimal, blog, template, portfolio website"
+    />
+    <meta name="author" content="nK" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- START: Styles -->
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/be65a01054.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- END FONTS-->
+
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- END: Styles -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TXS3ZVH");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!--Google Analytics-->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-92090501-1", "auto");
+      ga("send", "pageview");
+    </script>
+    <!--END Google Analytics-->
+
+    <!-- GOOGLE ADS -->
+    <script
+      async
+      src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-6257052453431297",
+        enable_page_level_ads: true,
+      });
+    </script>
+    <!-- END GOOGLE ADS -->
+  </head>
+
+  <body>
+    <header class="nk-header">
+      <!--
+        START: Navbar
+    -->
+      <nav
+        class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top wordColor"
+      >
+        <div class="container">
+          <div class="nk-nav-table">
+            <a href="index.html" class="nk-nav-logo">
+              <img src="assets/images/logo.png" alt="logo-light" width="30" />
+            </a>
+
+            <ul
+              class="nk-nav nk-nav-right hidden-md-down"
+              data-nav-mobile="#nk-nav-mobile"
+            >
+              <li>
+                <a href="index.html#about">About</a>
+              </li>
+              <li>
+                <a href="index.html#projects">Portfolio</a>
+              </li>
+              <li>
+                <a href="index.html#blog">Blog</a>
+              </li>
+              <li>
+                <a href="index.html#contact">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="nk-nav nk-nav-right nk-nav-icons">
+              <li class="single-icon hidden-lg-up">
+                <a href="#" class="nk-navbar-full-toggle">
+                  <span class="nk-icon-burger">
+                    <span class="nk-t-1"></span>
+                    <span class="nk-t-2"></span>
+                    <span class="nk-t-3"></span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- END: Navbar -->
+    </header>
+
+    <!--START: Navbar Mobile-->
+    <nav
+      class="nk-navbar nk-navbar-full nk-navbar-align-center"
+      id="nk-nav-mobile"
+    >
+      <div class="nk-navbar-bg">
+        <div
+          class="bg-image"
+          style="
+            background-image: url('assets/images/background/background13.jpg');
+          "
+        ></div>
+      </div>
+      <div class="nk-nav-table">
+        <div class="nk-nav-row">
+          <div class="container">
+            <div class="nk-nav-header">
+              <div class="nk-nav-logo">
+                <a href="index.html" class="nk-nav-logo">
+                  <img
+                    src="assets/images/logo.png"
+                    alt="logo-light"
+                    width="55"
+                  />
+                </a>
+              </div>
+
+              <div class="nk-nav-close nk-navbar-full-toggle">
+                <span class="nk-icon-close"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nk-nav-row-full nk-nav-row">
+          <div class="nano">
+            <div class="nano-content">
+              <div class="nk-nav-table">
+                <div
+                  class="nk-nav-row nk-nav-row-full nk-nav-row-center nk-navbar-mobile-content"
+                >
+                  <ul class="nk-nav">
+                    <!-- Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"] -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nk-nav-row">
+          <div class="container">
+            <div class="nk-nav-social">
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/filz.ah/"
+                    ><i class="fa-brands fa-instagram contact-icon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/filza-ahmed-683b731a7/"
+                    ><i class="fa-brands fa-linkedin-in contact-icon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/nfahmed11"
+                    ><i class="fa-brands fa-github contact-icon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/Filza_Ah"
+                    ><i class="fa-brands fa-twitter contact-icon"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END: Navbar Mobile -->
+
+    <div class="nk-main">
+      <!-- START: Header Title -->
+      <div class="nk-header-title nk-header-title-lg">
+        <div class="bg-image">
+          <div
+            style="
+              background-image: url('assets/images/blogs/phones/phone3.jpeg');
+            "
+          ></div>
+        </div>
+        <div class="nk-header-table">
+          <div class="nk-header-table-cell">
+            <div class="container"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- END: Header Title -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="nk-gap-4"></div>
+
+            <!-- START: Post -->
+            <div class="nk-blog-post nk-blog-post-single">
+              <h1 class="display-4">The First Interview</h1>
+
+              <div class="nk-post-meta">
+                <div class="nk-post-date">April 29, 2022</div>
+                <div class="nk-post-category"><a href="#">Design</a></div>
+                <div class="nk-post-comments-count">2 Comments</div>
+              </div>
+
+              <!-- START: Post Text -->
+              <div class="nk-post-text">
+                <p>
+                  I just had my very first real interview. I've been doing a few
+                  interviews with recruiters where they ask me basic questions
+                  about work status and work visa and background but it only
+                  lasts 15 minutes. This one was a whole 30 minutes, maybe
+                  longer, I wish I looked at the time. OHMYLORD. MY ARMPITS WEAR
+                  SWEATING, MY BODY WAS SHAKING. I WAS SO TENSE. But it went so
+                  well alhamdulilah, as well as it could have gone with my
+                  experience and knowledge, i think i bombed like two questions
+                  where she asked about how familiar are you with SEO and google
+                  analytics, and i was like UHHHHHH. ZERO FAMILIARITY. She
+                  turned away to find another interview question to which I was
+                  like “BUUUTTTTT its not to say I cant learn it, if put in the
+                  position, I will exhaust my resources to learn,” which i think
+                  is important to say because employers want to know if you are
+                  willing to put yourself out there and learn new things. Omg
+                  I'm still freaking out about this interview. How did I land an
+                  interview in the first place? Jeeeeeezzzz. Okay so it is a
+                  small company here is the link :
+                  https://www.livlenmedia.com/home#get-started They are based
+                  out of midland texas and have a small team of like 10 people.
+                  She was like Most live in texas but they don't have many web
+                  devs who are located in texas. It would be remote work. We
+                  touched on SO MANY THINGS. She asked me how familiar am i with
+                  css and js on a scale of 1 to 10, and i was like “i don't want
+                  to sound over confident but like a 8-9, i know there is always
+                  more to learn, languages are forever changing but as of now, i
+                  would say i am pretty damn near comfortable with those
+                  languages.” She asked me why I chose web dev as a career, and
+                  I explained to her that I am very passionate about creative,
+                  aesthetically pleasing web pages and solving problems. I enjoy
+                  being challenged and I felt like my careers in the past did
+                  not offer that to me. It's not the end result that drives me
+                  but the process of getting there and I LOVE to mesh creativity
+                  and coding skills.” She also asked me about my background. I
+                  told her i'm a self taught web developer , i had my word
+                  document with notes open on the side lmao. I told her it
+                  started off as a side hobby, then turned into a full time
+                  career when i realized i was not satisfied with my previous
+                  careers. I told her I graduated from uncg with a degree in
+                  architecture and didnt feel like I was being challenged. I
+                  expressed my need to be creative and started to look into
+                  bootcamps courses , talked about juno and my side projects
+                  from there. When I first started the interview, our videos
+                  were both on, but she kept saying she couldn't hear me. So I
+                  kept tampering with it and my sweaty pits were getting larger
+                  and larger. Then finally something worked. But in the process
+                  my evenly divided desktop with notes on one side and interview
+                  video on the other was not laid out like I wanted. So I had to
+                  talk and try to quietly reorganize my desktop page so I could
+                  see both. She told me she's more inclined towards self taught
+                  developers because it shows a willingness to learn new things
+                  and drive whereas someone who has a background in cs where it
+                  was their degree, might be stuck and not want to learn more. I
+                  expressed that I am self taught in other areas and that's why
+                  I was super excited about the fact that she contacted me.
+                  Their company has a lot of things that interest me and I
+                  noticed they were hiring for a lot of other creative fields
+                  and I expressed that they have a lot to offer in terms of
+                  those areas too. I was asked about what i'm looking for in
+                  terms of work, i told her my focus is on the front end at the
+                  moment, but i see myself becoming full stack in the near
+                  future. I want a company that will help me grow and teach me
+                  and in turn where i can offer my talents in all aspects, not
+                  just coding. She asked about my favorite project I have worked
+                  on, pulled up my resume, and opened the masala india website,
+                  then she asked my the process of building a website, i told
+                  her i like to make a list of what the apages will be, will it
+                  be all one page or multiple subpages, then draw it out
+                  according to what it should look like, color scheme, fonts,
+                  then i do my coding in visual studio code and i use google
+                  chrome debugger to inspect my elements and javascript and
+                  twerk as i go along. She asked about my favorite coding tools.
+                  I listed visual studio code as my editor, github, codepen,
+                  scss, bootstrap library and a quick reason as to why. She
+                  asked what does it look like for you working with a client?
+                  How do you go about creating the designs? How often do you
+                  communicate with clients? what websites i use to keep up with
+                  new tech, what blogs i read? i told her i'm on udemy, scrimba
+                  lately learning react, i told her about colt steel and i did
+                  his react and bootcamp as well. She asked how I work with
+                  multiple projects/ multi tasking, how do i prioritize multiple
+                  projects/tasks. I told her i on a daily basis make a list of
+                  things i need to accomplish and it is according to the
+                  deadlines i have set, i have one for a weekly and monthly
+                  basis and i am very good with juggling multiple projects SHE
+                  ALSO ASKED WHAT'S THE MOST OVERLOOKED THING IN WEB PAGES, I
+                  answered that the navigation and layout is very important, the
+                  user experience is super important you want it to be easy on
+                  the eyes, someone to come to the webpage and be able to
+                  quickly achieve what they are trying to do, less is more, you
+                  don't want the user to get frustrated and leave your webpage.
+                  Then she asked me if i have any questions and i said id done
+                  some research but if she could tell me about her company and
+                  the business, she explained they have multiple business within
+                  one and asked if i would be open to working with anyone, and
+                  give input towards any of the others, and i was like HECK
+                  YEAHHHHHH. I asked about what the work day looks like with
+                  remote, she said we do hybrid with meetings in person once a
+                  week buyt remote would be as long as its online on mondays 10
+                  -11 She express her previous coworker went remote and was not
+                  great at communication, i told her about how i'm always early
+                  to everything. I was here 15 minutes before the interview even
+                  started, i am very good at communicating, and am quick to
+                  respond to phone calls, texts, emails. Omg i think it went
+                  well, ya allah please don't let her find anyone better, i did
+                  so much research on them, i stalked everyone on linkedin, they
+                  have a total of 10 members. But i know their side hobbies,
+                  foods, where they are from. What is wrong with me? I am going
+                  to work on wordpress/squarespace and learn some more about it.
+                  MY HEART IS BEATING SO FAST. OHMYALLAH. Time to go send in
+                  more job applications. Can't get too comfortable yet until I
+                  actually land a job. LOVE YOU ALLAH. YOU ARE SO GREAT TO ME.
+                </p>
+
+                <blockquote>
+                  <em
+                    >Donec consectetur arcu eu diam cursus consectetur. Interdum
+                    malesuada faucibus. Morbi dapibus eros vitae nisi blandit
+                    lacinia.</em
+                  >
+                </blockquote>
+              </div>
+              <!-- END: Post Text -->
+
+              <!-- START: Post Share -->
+              <div class="nk-post-share">
+                <strong>Share:</strong>
+                <a href="#" title="Share page on Facebook" data-share="facebook"
+                  >Facebook</a
+                >,
+                <a href="#" title="Share page on Twitter" data-share="twitter"
+                  >Twitter</a
+                >,
+                <a
+                  href="#"
+                  title="Share page on Pinterest"
+                  data-share="pinterest"
+                  >Pinterest</a
+                >
+              </div>
+              <!-- END: Post Share -->
+            </div>
+            <!-- END: Post -->
+
+            <div class="nk-gap-3"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- START: Comments -->
+      <div id="comments"></div>
+      <div class="nk-comments">
+        <div class="nk-gap-3"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <h3 class="nk-title">Comments:</h3>
+              <div class="nk-gap-1"></div>
+
+              <!-- START: Comment -->
+              <div class="nk-comment">
+                <div class="nk-comment-avatar">
+                  <a href="#">
+                    <img src="assets/images/avatar-1.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="nk-comment-meta">
+                  <div class="nk-comment-name">
+                    <a href="#">John Leonard</a>
+                  </div>
+                  <div class="nk-comment-reply"><a href="#">Reply</a></div>
+                  <div class="nk-comment-date">20 September, 2016</div>
+                </div>
+                <div class="nk-comment-text">
+                  <p>
+                    Nullam ac dui et purus malesuada gravida id fermentum orci.
+                    In eu ipsum quis urna hendrerit condimentum vitae a mauris.
+                    In congue turpis purus, vitae tempus ante id. Donec orci
+                    arcu, sagittis ut finibus vitae.
+                  </p>
+                </div>
+
+                <!-- START: Comment -->
+                <div class="nk-comment">
+                  <div class="nk-comment-avatar">
+                    <a href="#">
+                      <img src="assets/images/avatar-2.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="nk-comment-meta">
+                    <div class="nk-comment-name">
+                      <a href="#">Jody Parker</a>
+                    </div>
+                    <div class="nk-comment-reply"><a href="#">Reply</a></div>
+                    <div class="nk-comment-date">20 September, 2016</div>
+                  </div>
+                  <div class="nk-comment-text">
+                    <p>
+                      Aenean eget varius augue, nec gravida lectus. Pellentesque
+                      in imperdiet us, ac efficitur risus. Etiam laoreet dapibus
+                      lorem vitae aliquam. Sed elementum ligula, molestie
+                      consectetur massa rhoncus at.
+                    </p>
+                  </div>
+                </div>
+                <!-- END: Comment -->
+              </div>
+              <!-- END: Comment -->
+
+              <!-- START: Comment -->
+              <div class="nk-comment">
+                <div class="nk-comment-avatar">
+                  <a href="#">
+                    <img src="assets/images/avatar-3.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="nk-comment-meta">
+                  <div class="nk-comment-name">
+                    <a href="#">Katie Anderson</a>
+                  </div>
+                  <div class="nk-comment-reply"><a href="#">Reply</a></div>
+                  <div class="nk-comment-date">21 September, 2016</div>
+                </div>
+                <div class="nk-comment-text">
+                  <p>
+                    To set. Lights likeness after, stars void in doesn't subdue.
+                  </p>
+                </div>
+              </div>
+              <!-- END: Comment -->
+            </div>
+          </div>
+        </div>
+        <div class="nk-gap-3"></div>
+      </div>
+      <!-- END: Comments -->
+
+      <!-- START: Reply -->
+      <div class="nk-reply">
+        <div class="nk-gap-3"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <h3 class="nk-title">Leave a Comment:</h3>
+              <div class="nk-gap-1"></div>
+              <form action="#" class="nk-form">
+                <div class="row vertical-gap">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control required"
+                      name="name"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control required"
+                      name="email"
+                      placeholder="Your Email"
+                    />
+                  </div>
+                </div>
+                <div class="nk-gap-1"></div>
+                <textarea
+                  class="form-control required"
+                  name="message"
+                  rows="8"
+                  placeholder="Your Comment"
+                  aria-required="true"
+                ></textarea>
+                <div class="nk-gap-1"></div>
+                <div class="nk-form-response-success"></div>
+                <div class="nk-form-response-error"></div>
+                <button class="nk-btn">Post a Comment</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="nk-gap-3"></div>
+      </div>
+      <!-- END: Reply -->
+
+      <!-- START: Pagination -->
+      <div class="nk-pagination nk-pagination-center">
+        <div class="container">
+          <a class="nk-pagination-prev" href="#">
+            <span class="pe-7s-angle-left"></span> Previous Post</a
+          >
+          <a class="nk-pagination-center" href="#">
+            <span class="nk-icon-squares"></span>
+          </a>
+          <a class="nk-pagination-next" href="#"
+            >Next Post <span class="pe-7s-angle-right"></span>
+          </a>
+        </div>
+      </div>
+      <!-- END: Pagination -->
+
+      <!--
+    START: Footer
+-->
+      <footer class="nk-footer">
+        <div class="nk-footer-cont">
+          <div class="container text-xs-center">
+            <div class="nk-footer-social">
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/filz.ah/"
+                    ><i class="fa-brands fa-instagram contact-icon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/filza-ahmed-683b731a7/"
+                    ><i class="fa-brands fa-linkedin-in contact-icon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/nfahmed11"
+                    ><i class="fa-brands fa-github contact-icon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/Filza_Ah"
+                    ><i class="fa-brands fa-twitter contact-icon"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="nk-footer-text">
+              <p>
+                Developed and Designed with Love <i class="fas fa-heart"></i> by
+                Filza Ahmed
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- END: Footer -->
+    </div>
+
+    <!-- START: Scripts -->
+    <script src="script.js"></script>
+
+    <!-- END: Scripts -->
+  </body>
+</html>
